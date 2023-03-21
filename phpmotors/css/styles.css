@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    
+}
+
+html{
+    box-sizing: border-box;
+   }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+   }
+
+body {
+    background-image: url("../images/site/small_check.jpg");
+    height: 100vh;
+
+}
+
+#acc2 {
+    color:black;
+}
+
+.my-account {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.container {
+    background-color: white;
+    border: 6px solid #4c96d7;
+    margin: auto;
+    margin-top: 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+} 
+
+hr {
+    height: 3px;
+    background-color: black;
+} 
+
+.footer {
+    align-items: center;
+}
+
+.account {
+    align-items: center;
+}
+
+nav {
+
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+nav ul li:hover {
+    background-color: #4c96d7;
+    color: black;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+footer {
+    display: inline-block;
+    text-align: center;
+}
+
+/*-------------- Home Page--------------*/
+.home-img {
+    margin: auto;
+    width: 100%;
+}
+
+button {
+    margin-top:20px;
+    background-color: #4c96d7;
+    width: 15%;
+
+ 
+}
+
+.second-container {
+    margin-left: 55px;
+    margin-top: 20px;
+    color:darkblue;
+    font-size: 1.3rem;
+}
+
+.navbar {
+    color: white;
+}
+
+.acc {
+    color:black;
+}
+a:link {
+    text-decoration: none;
+}
+
+.upgrades {
+    margin-top: 20px;
+    margin-left: 45px;
+    /* display: flex;
+    box-sizing: border-box;
+    flex-direction: column; */
+    flex: 1 1 5rem;
+    
+}
+
+.main-div{
+   display: flex;
+   flex: 1;
+
+}
+
+.delorean-item {
+    margin-top: 20px;
+    background-color: #4c96d7;
+    display: flex;
+    width: 30%;;
+    justify-content: center;
+}
+
+
+.revs {
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+
+.capacitor {
+    margin: auto;
+
+}
+
+.flux {
+    display: flex;
+    
+}
+
+.reviews {
+    margin-top: 20px;
+    flex: 1 1 5rem;
+}
+
+/* nav a {
+    color: white;
+} */
+
+#acc, #acc2, #acc3 {
+    color: black;
+}
+
+
+.upg-img {
+    width: 60px;
+    margin: auto;
+}
+
+/* Error Page */
+
+.error {
+    margin-left: 20px;
+}
+
+/* Login form */
+
+.form {
+    margin-left: 20px;
+}
+
+/* Vehicle Management Page */
+
+#add-vehicle, #add-classification {
+    color: black;
+}
+/*--------------Media Query-----------*/
+
+/* Session */
+.welcome {
+    background-color: black;
+}
+
+/* For vehicle display in classification view */
+#inv-display {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+#inv-display h2{
+    font-size: 1rem;
+}
+
+#inv-display li {
+    max-width: 200px;
+    flex: 1 0 auto;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+}
+  
+#inv-display div {
+    width: 100%;
+}
+
+#inv-display {
+    display: flex;
+    padding: 5px;
+}
+   
+#inv-display li {
+    margin-bottom: .5em;
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+}
+   
+#inv-display li img {
+    max-width: 100%;
+}
+
+#inv-information{
+
+    display: flex;
+}
+
+#inv-information img {
+    width: 80%;
+}
+
+/* #description {
+    flex-direction: row;
+} */
+
+
+@media all and (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .second-container {
+        font-size: 1rem;
+    } 
+
+    button {
+        width: 35%;
+    }
+
+    .delorean-item {
+        width: 40%;
+        
+        justify-content: center;
+        
+    }
+
+    .upgrades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    } 
+
+    .main-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .dmc {
+        margin-top: 20px;
+    }
+
+    .revs{
+        margin-top: 20px;
+    }
+
+    #inv-display {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+       
+    #inv-display li {
+        margin-bottom: .5em;
+        border: 1px #ccc solid;
+        list-style-type: none;
+        flex: 1 1 auto;
+    }
+       
+    #inv-display li img {
+        max-width: 100%;
+    }
+
+    #inv-information {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #inv-information img {
+        width: 100%;
+    }
+}
